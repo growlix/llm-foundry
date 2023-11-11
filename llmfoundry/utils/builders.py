@@ -149,7 +149,7 @@ def build_algorithm(name: str, kwargs: Dict[str, Any]) -> Algorithm:
     elif name == 'low_precision_layernorm':
         return algorithms.LowPrecisionLayerNorm(**kwargs)
     elif name == 'seq_len_warmup':
-        return algorithms.SeqLengthWarmup(**kwargs))
+        return algorithms.SeqLengthWarmup(**kwargs)
     else:
         raise ValueError(f'Not sure how to build algorithm: {name}')
 
